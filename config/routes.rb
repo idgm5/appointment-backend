@@ -3,9 +3,11 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :bikes
+      resources :appointments
     end
   end
 
   match 'appointments/create' => 'appointments#create', :via => :post
   resources :bikes
+  resources :appointments
 end
