@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       resources :bikes
     end
   end
-  
+
+  match 'appointments/create' => 'appointments#create', :via => :post
   resources :bikes
 end
