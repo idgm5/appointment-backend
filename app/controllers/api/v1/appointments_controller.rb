@@ -7,9 +7,9 @@ class Api::V1::AppointmentsController < ApiController
   end
 
   def create
-    @appointment = Appointment.new(params[:appointmentData])
+    @appointment = Appointment.new(user: params[:user], model: params[:model], city: params[:city], date: params[:date])
 
-    if @appointment.save
+    if @appointment.save!
       render :status => 200
     else
       # exception handling
