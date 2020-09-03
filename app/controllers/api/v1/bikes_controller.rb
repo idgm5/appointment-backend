@@ -1,3 +1,5 @@
+# rubocop:disable Style/EmptyMethod
+
 class Api::V1::BikesController < ApiController
   def show
   end
@@ -15,3 +17,5 @@ class Api::V1::BikesController < ApiController
     @bike = Bike.find(params[:id])
   end
 end
+
+# rubocop:enable Style/EmptyMethod
