@@ -1,4 +1,6 @@
 class Api::V1::AppointmentsController < ApiController
+  skip_before_action :verify_authenticity_token
+  
   def index
     @appointments = Appointment.get_all
     respond_to do |format|
