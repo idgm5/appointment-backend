@@ -7,7 +7,6 @@ Rails.application.routes.draw do
     end
   end
 
-  match 'api/v1/appointments/create' => 'appointments#create', :via => :post
   resources :bikes
   resources :appointments
 end
