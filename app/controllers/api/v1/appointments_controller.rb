@@ -9,7 +9,7 @@ class Api::V1::AppointmentsController < ApiController
   end
 
   def create
-    @appointment = Appointment.new(user: params[:user], model: params[:model], city: params[:city], date: params[:date])
+    @appointment = Appointment.create(user: params[:user], model: params[:model], city: params[:city], date: params[:date])
     render json: @appointment
   end
 end
