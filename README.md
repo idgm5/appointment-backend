@@ -19,8 +19,9 @@ Run  `bundle install` and then `rails server` finally open your web browser at `
 
 ## API Endpoints
 
-[Hosted on Heroku - Bikes](https://vespa-backend.herokuapp.com/api/v1/bikes)
-[Hosted on Heroku - Appointments](https://vespa-backend.herokuapp.com/api/v1/appointments)
+- [Hosted on Heroku - Bikes](https://vespa-backend.herokuapp.com/api/v1/bikes)
+
+- [Hosted on Heroku - Appointments](https://vespa-backend.herokuapp.com/api/v1/appointments)
 
 ## Live Website
 
@@ -36,7 +37,7 @@ Run  `bundle install` and then `rails server` finally open your web browser at `
   - Model
 
 ## Screenshot
-![image](web_app.png)
+![image](https://i.imgur.com/VTRiqCK.png)
 
 ## Built With
 
