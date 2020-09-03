@@ -17,10 +17,14 @@ cd /appointment-backend/
 ```
 Run  `bundle install` and then `rails server` finally open your web browser at `http://localhost:3000/`
 
-## Live Endpoints
+## API Endpoints
 
 [Hosted on Heroku - Bikes](https://vespa-backend.herokuapp.com/api/v1/bikes)
 [Hosted on Heroku - Appointments](https://vespa-backend.herokuapp.com/api/v1/appointments)
+
+## Live Website
+
+[Hosted on Heroku](https://vespa-reactjs.herokuapp.com/)
 
 ## How to send data to Appointment
 * Send a POST request with JSON including the following elements in the body:
