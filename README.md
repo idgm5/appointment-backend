@@ -41,14 +41,11 @@ Run  `bundle install` and then `rails server` finally open your web browser at `
 
 ## Built With
 
-* Node.js
-* React
-* React-DOM
-* React-Create-App
-* Redux
+* Ruby on Rails
+* Ruby
 * npm
 * CSS
-* ES6
+* JSON
 
 Tools used on this project
 
