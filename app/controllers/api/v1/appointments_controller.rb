@@ -1,6 +1,6 @@
 class Api::V1::AppointmentsController < ApiController
   skip_before_action :verify_authenticity_token
-  
+
   def index
     @appointments = Appointment.get_all
     respond_to do |format|
@@ -9,11 +9,7 @@ class Api::V1::AppointmentsController < ApiController
   end
 
   def create
-    @appointment = Appointment.new(user: params[:user], model: params[:model], city: params[:city], date: params[:date])
-    if @appointment.save
-      render :status => 200
-    else
-      render :status => 500
-    end
+    @appointment = Appointment.create(user: params[:user], model: params[:model], city: params[:city], date: params[:date])
+    render json: @appointment
   end
 end
