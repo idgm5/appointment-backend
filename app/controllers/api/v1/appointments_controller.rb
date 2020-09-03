@@ -9,7 +9,11 @@ class Api::V1::AppointmentsController < ApiController
   end
 
   def create
-    @appointment = Appointment.create(user: params[:user], model: params[:model], city: params[:city], date: params[:date])
-    render json: @appointment
+    @appointment = Appointment.new(user: params[:user], model: params[:model], city: params[:city], date: params[:date])
+    if @appointment.save
+      render :status => 200
+    else
+      render :status => 500
+    end
   end
 end
