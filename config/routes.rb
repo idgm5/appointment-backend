@@ -7,6 +7,6 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :bikes
-  resources :appointments
+  resources :bikes, :only => [:index]
+  resources :appointments, :only => [:index, :create]
 end
