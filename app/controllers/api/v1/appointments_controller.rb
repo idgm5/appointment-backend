@@ -9,8 +9,10 @@ class Api::V1::AppointmentsController < ApiController
   end
 
   def create
+    @bikeId = Bike.find_by_name(params[:model])
     @appointment = Appointment.create(user: params[:user], model: params[:model],
-                                      city: params[:city], date: params[:date])
+                                      city: params[:city], date: params[:date],
+                                      bike_id: @bikeId)
     render json: @appointment
   end
 end
