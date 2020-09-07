@@ -1,6 +1,7 @@
 # rubocop:disable Style/EmptyMethod
 
 class Api::V1::BikesController < ApiController
+  before_action :bike_params, only: [:index]
   def show
   end
 
@@ -15,6 +16,11 @@ class Api::V1::BikesController < ApiController
 
   def set_bike
     @bike = Bike.find(params[:id])
+  end
+
+  def bike_params
+    params.permit(:modelName, :description, :finance, :option,
+                  :total, :duration, :picture)
   end
 end
 

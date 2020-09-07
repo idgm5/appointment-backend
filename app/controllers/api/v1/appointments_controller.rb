@@ -1,5 +1,6 @@
 class Api::V1::AppointmentsController < ApiController
   skip_before_action :verify_authenticity_token
+  before_action :appointment_params, only: [:index]
 
   def index
     @appointments = Appointment.get_all
@@ -14,5 +15,11 @@ class Api::V1::AppointmentsController < ApiController
                                       city: params[:city], date: params[:date],
                                       bike_id: @bikeId)
     render json: @appointment
+  end
+
+  private
+
+  def appointment_params
+    params.permit(:user, :model, :city, :bike_id, :date)
   end
 end
