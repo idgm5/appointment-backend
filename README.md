@@ -17,6 +17,13 @@ cd /appointment-backend/
 ```
 Run  `bundle install` and then `rails server` finally open your web browser at `http://localhost:3000/`
 
+### Run tests
+
+```
+rspec --format documentation
+
+```
+
 ## API Endpoints
 
 - [Hosted on Heroku - Bikes](https://vespa-backend.herokuapp.com/api/v1/bikes)
