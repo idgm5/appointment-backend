@@ -6,8 +6,8 @@ RSpec.describe Bike, type: :model do
     let(:appointment) { FactoryBot.create :appointment }
     before :each do
       @appointment = appointment
-      @appointment_new = Appointment.create(model: "test", date: "2020-04-10", user: "test user",
-                                            city: "chicago", bike_id: bike)
+      @appointment_new = Appointment.create(model: 'test', date: '2020-04-10', user: 'test user',
+                                            city: 'chicago', bike_id: bike)
     end
 
     it 'should be valid' do
