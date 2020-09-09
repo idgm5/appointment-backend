@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  model: MyString
+  city: MyString
+  date: 2020-08-29
+
+two:
+  model: MyString
+  city: MyString
+  date: 2020-08-29
